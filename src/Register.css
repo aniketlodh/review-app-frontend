@@ -1,0 +1,26 @@
+.Register .form{
+    padding: 30px;
+    color: #fff;
+    
+}
+.Register{
+    background-color: #2B2B2B;
+    margin: 50px auto;
+    width: 500px;
+    border-radius: 10px;
+}
+.Register input{
+    height:30px;
+    width: 380px;
+    border-radius: 5px;
+    border: none;
+}
+#submit{
+    margin-top: 20px;
+    height: 35px;
+    width: 85px;
+    background-color: #365BDD;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}

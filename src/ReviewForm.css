@@ -1,0 +1,60 @@
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import'bootstrap/dist/css/bootstrap.min.css';
+
+.ReviewForm{
+    width: 100%;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #61428F;
+    color: white;
+    border-radius: 10px;
+}
+.rating{
+    position: relative;
+    /* top: 80%; */
+    /* left: 50%; */
+    margin-top: 50px;
+    transform: translate(-30%,-30%) rotateY(180deg);
+    display: flex;
+}
+.rating input{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    /* background: #ccc; */
+    
+}
+.rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+}
+.rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+    opacity: 1;
+}
+.ReviewForm{
+    background-color: #2B2B2B;
+    margin: 50px auto;
+    width: 500px;
+    border-radius: 10px;
+}
